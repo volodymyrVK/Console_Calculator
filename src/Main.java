@@ -15,5 +15,31 @@ public class Main {
         System.out.print("Enter second number: ");
         secondNumber = input.nextInt();
 
+        switch (operation){
+            case "+":
+                result = firstNumber + secondNumber;
+                System.out.println(answer + result);
+                break;
+            case "-":
+                result = firstNumber - secondNumber;
+                System.out.println(answer + result);
+                break;
+            case "*":
+                result = firstNumber * secondNumber;
+                System.out.println(answer + result);
+                break;
+            case "/":
+                result = firstNumber / secondNumber;
+                System.out.println(answer + result);
+                break;
+            case "%":
+                result = firstNumber % secondNumber;
+                System.out.println(answer + result);
+                break;
+            default:
+                System.out.println("Incorrect operation");
+                break;
+        }
+
     }
 }
